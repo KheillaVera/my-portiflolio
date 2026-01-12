@@ -1,0 +1,30 @@
+body{
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    border-style: dashed;
+    border-radius: 80px;
+    border-color: aqua;
+    background-color: antiquewhite;
+}
+header{
+    
+    font-weight: bold;
+    font-size: 40px;
+}
+img{
+    width: 400px;
+    height:400px;
+    border-style: hidden;
+    border-radius: 2000px;
+    image-orientation: center;
+}
+p{
+    margin: left -100px;
+}
+ul,ol{
+    list-style-position: inside;
+    text-align: justify;
+    padding-left: 400px;
+}
