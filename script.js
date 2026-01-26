@@ -1,7 +1,24 @@
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('active');
-    });
-}, { threshold: 0.1 });
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Select all elements with the class 'scroll-reveal'
+    const revealElements = document.querySelectorAll('.scroll-reveal');
 
-document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    const revealOnScroll = () => {
+        const windowHeight = window.innerHeight;
+        const elementVisible = 100; // How many pixels before the element is visible
+
+        revealElements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+
+            if (elementTop < windowHeight - elementVisible) {
+                element.classList.add('active');
+            }
+        });
+    };
+
+    // Listen for scroll event
+    window.addEventListener('scroll', revealOnScroll);
+    
+    // Trigger once on load
+    revealOnScroll();
+});
