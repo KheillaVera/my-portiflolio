@@ -159,3 +159,13 @@ footer { text-align: center; padding: 40px; color: #444; font-size: 0.8rem; }
     .contact-container { grid-template-columns: 1fr; }
     nav ul { display: none; } /* Simplified for mobile - or add hamburger menu logic */
 }
+--- Utilities & Animation --- */
+.scroll-reveal { opacity: 0; transform: translateY(30px); transition: 1s all ease; }
+.scroll-reveal.active { opacity: 1; transform: translateY(0); }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .contact-container { grid-template-columns: 1fr; }
+    nav ul { display: none; } /* Simplified for mobile - or add hamburger menu logic */
+}
