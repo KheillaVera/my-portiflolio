@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vera | Developer Portfolio</title>
-    <link rel="stylesheet" href="portifolio1.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <title>Vera | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23c6a87c%22/></svg>">
 </head>
 <body>
 
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
     <nav>
         <div class="logo">VERA<span class="dot">.</span>DEV</div>
+        
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </nav>
 
     <section class="hero">
@@ -23,7 +33,7 @@
             <p class="subtitle scroll-reveal">Student & Creative Strategist</p>
             <h1 class="scroll-reveal">Building the <span class="highlight">Future</span> of Digital Rwanda.</h1>
             <p class="description scroll-reveal">
-                I engineer robust digital solutions with purpose.
+                I engineer robust digital solutions with purpose. Specializing in systems that matter.
             </p>
             <div class="hero-btns scroll-reveal">
                 <a href="#projects" class="btn primary-btn">View My Work</a>
@@ -37,12 +47,18 @@
             <div class="about-card scroll-reveal">
                 <span class="badge">Who I Am</span>
                 <h2>Driven by Purpose</h2>
-                <p>
-                    As a developer and student at <strong>New Generation Academy</strong>, I am on a mission to build digital solutions that empower my community. With a technical foundation in <strong>HTML, CSS, JS, PHP, and SQL</strong>, I specialize in creating scalable applications.
-                </p>
-                <p>
-                    My journey is rooted in the belief that technology can solve real-world problems—a philosophy I apply to my startup, <strong>Pulse</strong>, and various community systems.
-                </p>
+                <div class="about-text-grid">
+                    <div class="text-block">
+                        <p>
+                            As a developer at <strong>New Generation Academy</strong>, I am on a mission to build digital solutions that empower my community. With a technical foundation in <strong>HTML, CSS, JS, PHP, and SQL</strong>, I specialize in creating scalable applications.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <p>
+                            My journey is rooted in the belief that technology can solve real-world problems—a philosophy I apply to my startup, <strong>Pulse</strong>, and various community systems.
+                        </p>
+                    </div>
+                </div>
                 <div class="verse-box">
                     <p>"I can do all things through Christ who strengthens me."</p>
                     <span>— Phil 4:13</span>
@@ -55,49 +71,67 @@
         <div class="container">
             <h2 class="section-title scroll-reveal">Selected Works</h2>
             <div class="project-grid">
+                
                 <div class="p-card scroll-reveal">
+                    <div class="card-glow"></div>
                     <div class="p-content">
-                        <span class="p-tag">Startup</span>
+                        <div class="p-header">
+                            <span class="p-tag">Startup</span>
+                            <div class="p-icon">⚡</div>
+                        </div>
                         <h3>Pulse</h3>
-                        <p>Advanced Video Editor built for creators.</p>
+                        <p>Advanced Video Editor built for creators. Features timeline editing and export.</p>
                         <div class="tech-stack">
-                            <span>PHP</span><span>JS</span>
+                            <span>PHP</span><span>JS</span><span>FFmpeg</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-card scroll-reveal">
+                <div class="p-card scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="card-glow"></div>
                     <div class="p-content">
-                        <span class="p-tag">System</span>
+                        <div class="p-header">
+                            <span class="p-tag">System</span>
+                            <div class="p-icon">🚗</div>
+                        </div>
                         <h3>Smart Ride</h3>
-                        <p>Efficient Transport Booking logic.</p>
+                        <p>Efficient Transport Booking logic optimizing routes and reservations.</p>
                         <div class="tech-stack">
-                            <span>SQL</span><span>PHP</span>
+                            <span>SQL</span><span>PHP</span><span>Maps API</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-card scroll-reveal">
+                <div class="p-card scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="card-glow"></div>
                     <div class="p-content">
-                        <span class="p-tag">Security</span>
+                        <div class="p-header">
+                            <span class="p-tag">Security</span>
+                            <div class="p-icon">🔒</div>
+                        </div>
                         <h3>Attendance</h3>
-                        <p>Secure logic for tracking logs.</p>
+                        <p>Secure logic for tracking logs, managing student data and reporting.</p>
                         <div class="tech-stack">
-                            <span>Database</span><span>Secure Logic</span>
+                            <span>Database</span><span>Security</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-card scroll-reveal">
+                <div class="p-card scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="card-glow"></div>
                     <div class="p-content">
-                        <span class="p-tag">Entertainment</span>
+                        <div class="p-header">
+                            <span class="p-tag">Entertainment</span>
+                            <div class="p-icon">🎵</div>
+                        </div>
                         <h3>Rhythm</h3>
-                        <p>Immersive Web Music Player.</p>
+                        <p>Immersive Web Music Player with custom visualizer and playlist support.</p>
                         <div class="tech-stack">
-                            <span>Audio API</span><span>CSS</span>
+                            <span>Audio API</span><span>CSS Animation</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -105,6 +139,7 @@
     <section id="contact" class="contact-section">
         <div class="container contact-container scroll-reveal">
             <div class="contact-text">
+                <span class="badge">Get in Touch</span>
                 <h2>Let's Build Something Great.</h2>
                 <p>Based in Kigali, Rwanda.</p>
                 <a href="mailto:irakozegwizak@gmail.com" class="email-link">irakozegwizak@gmail.com</a>
